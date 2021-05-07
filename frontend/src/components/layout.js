@@ -22,6 +22,9 @@ export default function Layout({ children }) {
 
           body {
             font: 1rem 'Lato', sans-serif;
+          }
+
+          p {
             line-height: 2;
           }
 

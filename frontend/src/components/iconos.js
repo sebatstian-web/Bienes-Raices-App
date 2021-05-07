@@ -22,7 +22,7 @@ const ListadoIconos = styled.ul`
 export default function Iconos({ estacionamiento, habitaciones, wc }) {
   const { iconos } = useStaticQuery(graphql`
     {
-      iconos: allFile(filter: { relativeDirectory: { eq: "icons" } }) {
+      iconos: allFile(filter: { relativeDirectory: { eq: "icons-cards" } }) {
         edges {
           node {
             id
@@ -38,15 +38,15 @@ export default function Iconos({ estacionamiento, habitaciones, wc }) {
   return (
     <ListadoIconos>
       <li>
-        <img src={iconoSvg[1].node.publicURL} alt="Habitaciones" />
+        <img src={iconoSvg[0].node.publicURL} alt="Habitaciones" />
         <p>{habitaciones}</p>
       </li>
       <li>
-        <img src={iconoSvg[4].node.publicURL} alt="Estacionamientos" />
+        <img src={iconoSvg[1].node.publicURL} alt="Estacionamientos" />
         <p>{estacionamiento}</p>
       </li>
       <li>
-        <img src={iconoSvg[5].node.publicURL} alt="Baños" />
+        <img src={iconoSvg[2].node.publicURL} alt="Baños" />
         <p>{wc}</p>
       </li>
     </ListadoIconos>
