@@ -4,7 +4,9 @@ import { css } from '@emotion/react';
 import BackgroundImage from 'gatsby-background-image';
 import styled from '@emotion/styled';
 
+import Encuentra from '../components/encuentra';
 import Layout from '../components/layout';
+import ListadoPropiedades from '../components/listadoPropiedades';
 import useInicio from '../hooks/useInicio';
 
 import * as indexCSS from '../css/index.module.css';
@@ -42,6 +44,8 @@ export default function Index() {
           <p>{contenido}</p>
         </div>
       </main>
+      <Encuentra />
+      <ListadoPropiedades />
     </Layout>
   );
 }

@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 export default function useInicio() {
   // gatsby-transformer-sharp permite usar el duotone
   const resp = useStaticQuery(graphql`
-    query {
+    {
       allStrapiPaginas(filter: { nombre: { eq: "Inicio" } }) {
         nodes {
           id
