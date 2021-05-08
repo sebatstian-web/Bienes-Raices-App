@@ -13,8 +13,6 @@ export default function ListadoPropiedades() {
 
   useEffect(() => setPropiedades(resp), [resp]);
 
-  console.log({ propiedades });
-
   return (
     <>
       <h2

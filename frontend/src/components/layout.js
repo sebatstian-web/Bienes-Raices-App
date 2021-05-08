@@ -28,6 +28,12 @@ export default function Layout({ children }) {
             line-height: 2;
           }
 
+          h1,
+          h2,
+          h3 {
+            text-align: center;
+          }
+
           ul {
             list-style: none;
             margin: 0;

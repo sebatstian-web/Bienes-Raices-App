@@ -19,7 +19,7 @@ const ListadoIconos = styled.ul`
   }
 `;
 
-export default function Iconos({ estacionamiento, habitaciones, wc }) {
+export default function IconosCard({ estacionamiento, habitaciones, wc }) {
   const { iconos } = useStaticQuery(graphql`
     {
       iconos: allFile(filter: { relativeDirectory: { eq: "icons-cards" } }) {

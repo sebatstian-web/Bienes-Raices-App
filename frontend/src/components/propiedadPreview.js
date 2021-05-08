@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 import styled from '@emotion/styled';
 import urlSlug from 'url-slug';
 
-import Iconos from './iconos';
+import IconosCard from './iconosCard';
 
 const Boton = styled(Link)`
   margin-top: 2rem;
@@ -46,7 +46,6 @@ const Contenido = styled.div`
 export default function PropiedadPreview({ propiedad }) {
   const {
     nombre,
-    // descripcion,
     precio,
     estacionamiento,
     habitaciones,
@@ -61,7 +60,7 @@ export default function PropiedadPreview({ propiedad }) {
         <h3>{nombre}</h3>
         <p className="precio">$ {precio}</p>
 
-        <Iconos
+        <IconosCard
           estacionamiento={estacionamiento}
           habitaciones={habitaciones}
           wc={wc}
